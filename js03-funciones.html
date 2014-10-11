@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+		function factorial(num)
+		{
+			var fac=1;
+			for(ind=num;ind>0;ind--)
+				fac=fac*ind;
+			
+			// for(num;num>0;num--)
+			
+			return fac;
+		}
+		alert("Primer metodo "+factorial(6));
+
+		// Otro modo de declarar funciones
+		
+		var factorial=function(num){
+			var fac=1;
+			for(num;num>0;num--)
+				fac=num*fac;
+			alert("Segundo metodo "+fac);
+		}
+		factorial(3);
+		
+		// La diferencia entre los dos métodos es que uno hay que llamarlo desde un alert para que escriba el mensaje y el segundo llama al alert desde el metodo.
+	</script>
+</head>
+<body>
+</body>
+</html>
